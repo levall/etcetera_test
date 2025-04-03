@@ -1,0 +1,198 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
+}
+
+:focus {
+    outline: 0
+}
+
+html,
+body {
+    height: 100%;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+input {
+    border-radius: 0;
+}
+
+img {
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.page {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+.container {
+    max-width: 1448px;
+    padding: 0 40px;
+    margin: 0 auto;
+    width: 100%;
+
+    @media (max-width: 1150px) {
+        padding: 0 20px;
+    }
+
+    @media (max-width: 750px) {
+        padding: 0 16px;
+    }
+}
+
+h2 {
+    color: #303235;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 80px;
+}
+
+h1 {
+    color: #2b2724;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    margin: 50px 0 30px;
+}
+
+#main_menu{
+    margin-bottom: 20px 0;
+    background: #2b2724;
+}
+#main_menu ul{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+#main_menu li, #main_menu li a{
+    font-size: 16px;
+    margin: 20px;
+    color: #f4dbb4;
+}
+
+#main_menu li:hover, #main_menu li a:hover{
+    color: white;
+}
+
+.center{
+    text-align: center;
+}
+
+section{
+    margin: 0 20px 50px;
+    text-align: justify;
+}
+
+.flex-row{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.flex-row.left{
+    justify-content: left;
+}

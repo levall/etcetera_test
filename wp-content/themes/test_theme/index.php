@@ -1,0 +1,26 @@
+<?php
+/**
+ * The main template file
+ *
+ * This is the most generic template file in a WordPress theme
+ * and one of the two required files for a theme (the other being style.css).
+ * It is used to display a page when nothing more specific matches a query.
+ * E.g., it puts together the home page when no home.php file exists.
+ * Learn more: https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package Understrap
+ */
+
+// Exit if accessed directly.
+defined( 'ABSPATH' ) || exit;
+
+get_header();
+
+?>
+<main class="wp-block-group" style="margin-top:var(--wp--preset--spacing--60)">
+	<!-- wp:pattern {"slug":"twentytwentyfive/hidden-blog-heading"} /-->
+	<!-- wp:pattern {"slug":"twentytwentyfive/template-query-loop"} /-->
+</main>
+<?php
+
+get_footer();
