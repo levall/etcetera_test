@@ -13,6 +13,6 @@ if ( have_posts() ) : ?>
             </a>
     </section>
 <?php endif; ?>
-
+<?php echo do_shortcode('[filters_block]')?>
 <?php get_footer(); ?>
 

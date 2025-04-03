@@ -196,3 +196,7 @@ section{
 .flex-row.left{
     justify-content: left;
 }
+
+.main{
+    display: flex;
+}

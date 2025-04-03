@@ -1,0 +1,66 @@
+section.shortcode form{
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: row;
+    border: 1px solid #2b2724;
+    border-radius: 20px;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+section.widget form{
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: column;
+    border: 1px solid #2b2724;
+    border-radius: 20px;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+section input[type="text"]{
+    height: 30px;
+    margin-top: 5px;
+    border: 0;
+    padding: 5px 10px;
+    background: #f4dbb4;
+    border-radius: 10px;
+}
+
+div.filter{
+    width: 250px;
+    margin: 10px;
+}
+
+label.filter_name{
+    display: block;
+}
+
+label.radio_filter{
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
+    padding: 8px 3px;
+    margin-right: -1px;
+    transition: all 0.1s ease-in-out;
+}
+
+div.submit{
+    width : 33%;
+    text-align: center;
+    padding: 10px;
+    background: #f4dbb4;
+    margin: 20px auto;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+div.submit:hover{
+    background: #2b2724;
+    color: #f4dbb4;
+    cursor: pointer;
+}
+
+

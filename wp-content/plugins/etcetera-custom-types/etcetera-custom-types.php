@@ -22,11 +22,26 @@ class EtceteraCustomTypes
 
     public function init()
     {
+        $this->define('IMMOVABLES', 'immovables');
+
         // Include utility functions.
         include_once __DIR__ . '/includes/add-new-types.php';
+        include_once __DIR__ . '/includes/filters.php';
+        include_once __DIR__ . '/includes/FiltersWidget.php';
+
+        wp_enqueue_style( 'etcetera_css',  '/wp-content/plugins/etcetera-custom-types/assets/css/styles.css' );
+        //wp_enqueue_script( 'etcetera_js', plugin_dir_path(__DIR__)  . '/assets/js/main.js', array( 'jquery' ), '1.0', true );
 
         add_action('init', array('EtceteraTypes\AddNewTypes', 'customTaxonomies'));
         add_action('init', array('EtceteraTypes\AddNewTypes', 'customPosts'));
+
+        Filters::registerHooks();
+    }
+
+    public function define( $name, $value = true ) {
+        if ( ! defined( $name ) ) {
+            define( $name, $value );
+        }
     }
 }
 
@@ -41,5 +56,4 @@ function etceteraCustomTypes() {
     return $etceteraCustomTypes;
 }
 
-// Instantiate.
 etceteraCustomTypes();

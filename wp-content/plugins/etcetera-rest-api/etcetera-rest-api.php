@@ -21,9 +21,7 @@ class EtceteraRestAPI
     }
     public function init()
     {
-        // Include utility functions.
         $this->define('IMMOVABLES', 'immovables');
-
         $this->define('IMMOVABLES_NAME', 'build_name');
         $this->define('IMMOVABLES_COORDINATES', 'coordinates');
         $this->define('IMMOVABLES_FLOORS_NUMBER', 'floors_number');
@@ -65,5 +63,4 @@ function etceteraRestApi() {
     return $etceteraRestApi;
 }
 
-// Instantiate.
 etceteraRestApi();
