@@ -10,4 +10,5 @@
         <?php echo $filtersHtml; ?>
     </form>
     <div class="submit" data-form="shortcode">Пошук</div>
+    <div class="search_results"></div>
 </section>

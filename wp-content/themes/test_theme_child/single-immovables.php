@@ -10,11 +10,9 @@ if ($immovableData){
 
 ?><h1><?php the_title()?></h1>
 
-
-
 <div class="flex-row left">
     <section>
-        <h2>Данны нерухомості</h2>
+        <h2>Данні нерухомості</h2>
         <div><strong>Координати:</strong> <?php echo $immovableData['coordinates']?></div>
         <div><strong>Кількість поверхів:</strong> <?php echo $immovableData['floors_number']?></div>
         <div><strong>Тип будівлі:</strong> <?php echo $immovableData['build_type']?></div>

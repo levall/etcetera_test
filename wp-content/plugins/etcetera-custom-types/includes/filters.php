@@ -40,25 +40,25 @@ class Filters
             'name' => 'Площа аппартаментів',
             'type' => 'string',
             'possible_values' => [],
-            'parameter' => 'appartment_square'
+            'parameter' => 'apartment_square'
         ),
         array(
             'name' => 'Кількість кімнат',
             'type' => 'radio',
             'possible_values' => [1,2,3,4,5,6,7,8,9,10],
-            'parameter' => 'appartment_rooms_number'
+            'parameter' => 'apartment_rooms_number'
         ),
         array(
             'name' => 'Балкон',
             'type' => 'radio',
             'possible_values' => ['так','ні'],
-            'parameter' => 'appartment_porch'
+            'parameter' => 'apartment_porch'
         ),
         array(
             'name' => 'Санвузел',
             'type' => 'radio',
             'possible_values' => ['так','ні'],
-            'parameter' => 'appartment_bathroom'
+            'parameter' => 'apartment_bathroom'
         ),
 
     );

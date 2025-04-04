@@ -3,7 +3,7 @@ section.shortcode form{
     flex-flow: wrap;
     flex-direction: row;
     border: 1px solid #2b2724;
-    border-radius: 20px;
+    border-radius: 3px;
     margin: 20px 0;
     padding: 20px;
 }
@@ -13,18 +13,18 @@ section.widget form{
     flex-flow: wrap;
     flex-direction: column;
     border: 1px solid #2b2724;
-    border-radius: 20px;
+    border-radius: 3px;
     margin: 20px 0;
     padding: 20px;
 }
 
-section input[type="text"]{
+.filter input[type="text"]{
     height: 30px;
     margin-top: 5px;
     border: 0;
     padding: 5px 10px;
     background: #f4dbb4;
-    border-radius: 10px;
+    border-radius: 3px;
 }
 
 div.filter{
@@ -52,7 +52,7 @@ div.submit{
     padding: 10px;
     background: #f4dbb4;
     margin: 20px auto;
-    border-radius: 10px;
+    border-radius: 3px;
     font-size: 20px;
     font-weight: 600;
 }
@@ -63,4 +63,92 @@ div.submit:hover{
     cursor: pointer;
 }
 
+.search_results img{
+    width: 200px;
+    height: auto;
+}
 
+.search_results .flex-row{
+    justify-content: center;
+}
+
+.search_results h3{
+    text-align: center;
+    font-size: 30px;
+}
+
+.search_results h2{
+    text-align: center;
+    font-size: 20px;
+}
+
+section a{
+    display: block;
+    border: 1px solid #2b2724;
+    border-radius: 3px;
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
+    color: #2b2724;
+}
+
+section a:hover{
+    background: #f4dbb4;
+}
+
+
+.pagination .page-numbers{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.pagination li{
+    list-style-type: none;
+    margin: 0 10px;
+
+}
+
+.pagination li a{
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #2b2724;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    background: #f4dbb4;
+    flex-flow: column !important;
+    align-items: center;
+}
+
+.pagination li a:hover{
+    background: lightgray;
+}
+
+.pagination li span{
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #2b2724;
+    width: 50px;
+    height: 50px;
+    background: white;
+    flex-flow: column !important;
+    align-items: center;
+}
+
+.pagination li span.dots{
+    border: none;
+    margin: 0 20px;
+}
+
+.left-side .page-numbers{
+    flex-flow: wrap;
+}
+
+.left-side .pagination li{
+    margin-top: 10px;
+}
+
+section img{
+    max-width: 500px;
+}

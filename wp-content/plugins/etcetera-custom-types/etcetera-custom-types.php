@@ -28,14 +28,18 @@ class EtceteraCustomTypes
         include_once __DIR__ . '/includes/add-new-types.php';
         include_once __DIR__ . '/includes/filters.php';
         include_once __DIR__ . '/includes/FiltersWidget.php';
+        include_once __DIR__ . '/includes/Ajax.php';
+        include_once __DIR__ . '/includes/ChangeOrder.php';
 
         wp_enqueue_style( 'etcetera_css',  '/wp-content/plugins/etcetera-custom-types/assets/css/styles.css' );
-        //wp_enqueue_script( 'etcetera_js', plugin_dir_path(__DIR__)  . '/assets/js/main.js', array( 'jquery' ), '1.0', true );
+        wp_enqueue_script( 'etcetera_js', '/wp-content/plugins/etcetera-custom-types/assets/js/main.js','', '1.1', true );
 
         add_action('init', array('EtceteraTypes\AddNewTypes', 'customTaxonomies'));
         add_action('init', array('EtceteraTypes\AddNewTypes', 'customPosts'));
 
+        Ajax::init();
         Filters::registerHooks();
+        ChangeOrder::init();
     }
 
     public function define( $name, $value = true ) {
