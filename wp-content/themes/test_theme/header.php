@@ -20,9 +20,8 @@ defined( 'ABSPATH' ) || exit;
 
 <body>
 <?php do_action( 'wp_body_open' ); ?>
-<div class="site" id="page">
+    <div class="site" id="page">
 
-
-    <header id="main_menu">
-        <?php wp_page_menu( array( 'show_home' => 'Домашня' ) ); ?>
-    </header>
+        <header id="main_menu">
+            <?php wp_page_menu( array( 'show_home' => 'Домашня' ) ); ?>
+        </header>

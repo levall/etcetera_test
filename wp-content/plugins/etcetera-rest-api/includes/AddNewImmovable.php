@@ -25,6 +25,7 @@ class AddNewImmovable
                 $_POST[IMMOVABLES_ROOM_IMAGE]
             )){
                 $result = self::createNewImmovable($immovable);
+
                 if ( !$result) {
                     return json_encode(
                         array(
@@ -75,21 +76,6 @@ class AddNewImmovable
                 if (is_wp_error($buildImageID)  || is_wp_error($roomImageID)){
                     return new \WP_Error( 'an_error_code', 'Зображення не вірні', [ 'status' => 404 ] );
                 }
-
-
-                $buildArgs = array(
-                    IMMOVABLES_NAME => $immovable->buildingName,
-                    IMMOVABLES_COORDINATES => $immovable->coordinates,
-                    IMMOVABLES_FLOORS_NUMBER => $immovable->floorsNumber,
-                    IMMOVABLES_TYPE => $immovable->buildType,
-                    IMMOVABLES_ECOLOGY => $immovable->ecology,
-                    IMMOVABLES_IMAGE => $buildImageID,
-                    IMMOVABLES_SQUARE => $immovable->square,
-                    IMMOVABLES_ROOMS_NUMBER => $immovable->roomsNumber,
-                    IMMOVABLES_PORCH => $immovable->porch,
-                    IMMOVABLES_BATHROOM => $immovable->bathroom,
-                    IMMOVABLES_ROOM_IMAGE => $roomImageID
-                );
 
                 update_field(IMMOVABLES_NAME, $immovable->buildingName, $postID);
                 update_field(IMMOVABLES_COORDINATES, $immovable->coordinates, $postID);

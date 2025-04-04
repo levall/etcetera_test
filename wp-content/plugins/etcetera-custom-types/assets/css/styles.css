@@ -149,6 +149,11 @@ section a:hover{
     margin-top: 10px;
 }
 
+.left-side .search_results .response.flex-row{
+    flex-flow: column;
+    margin: 10px 0;
+}
+
 section img{
     max-width: 500px;
 }

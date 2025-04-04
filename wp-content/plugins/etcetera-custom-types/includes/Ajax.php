@@ -60,7 +60,7 @@ class Ajax
 
                     if ($wp_query->have_posts()) {
                         $postCounter = 0;
-                        echo '<div class="flex-row">';
+                        echo '<div class="response flex-row">';
 
                         while ($wp_query->have_posts()) {
                             $wp_query->the_post();

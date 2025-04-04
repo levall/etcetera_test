@@ -17,8 +17,6 @@ class DeleteImmovable
             if (!empty($posts)) {
 
                 foreach ($posts as $post){
-
-
                     $postID = $post->id;
 
                     acf_delete_metadata($postID, IMMOVABLES_NAME);

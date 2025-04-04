@@ -25,8 +25,8 @@ class EtceteraCustomTypes
         $this->define('IMMOVABLES', 'immovables');
 
         // Include utility functions.
-        include_once __DIR__ . '/includes/add-new-types.php';
-        include_once __DIR__ . '/includes/filters.php';
+        include_once __DIR__ . '/includes/AddNewTypes.php';
+        include_once __DIR__ . '/includes/Filters.php';
         include_once __DIR__ . '/includes/FiltersWidget.php';
         include_once __DIR__ . '/includes/Ajax.php';
         include_once __DIR__ . '/includes/ChangeOrder.php';
@@ -53,7 +53,7 @@ function etceteraCustomTypes() {
     global $etceteraCustomTypes;
 
     // Instantiate only once.
-    if ( ! isset( $etceteraCustomTypes ) ) {
+    if ( !isset( $etceteraCustomTypes ) ) {
         $etceteraCustomTypes = new EtceteraCustomTypes();
         $etceteraCustomTypes->init();
     }

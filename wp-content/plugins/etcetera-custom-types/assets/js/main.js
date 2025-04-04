@@ -39,14 +39,12 @@ $(function() {
             'paged': 1,
         };
 
-        console.log(data);
         sendRequest(data, responseDiv);
     })
 
     $('a.page-numbers').on('click', function (e){
         e.preventDefault();
         let a = $(this).text();
-        console.log(a);
     })
 
 })
@@ -60,8 +58,6 @@ function sendRequest(data, responseDiv){
 
         success: function (response) {
             if (response.success) {
-                console.log(response);
-                console.log(responseDiv)
                 responseDiv.html(response.html);
 
                 $('a.page-numbers').on('click', function (e){
