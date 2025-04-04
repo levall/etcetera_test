@@ -83,14 +83,20 @@ class AddNewImmovable
                 update_field(IMMOVABLES_TYPE, $immovable->buildType, $postID);
                 update_field(IMMOVABLES_ECOLOGY, $immovable->ecology, $postID);
                 update_field(IMMOVABLES_IMAGE, $buildImageID, $postID);
-                update_field('apartment_' . IMMOVABLES_SQUARE, $immovable->square, $postID);
-                update_field('apartment_' . IMMOVABLES_ROOMS_NUMBER, $immovable->roomsNumber, $postID);
-                update_field('apartment_' . IMMOVABLES_PORCH, $immovable->porch, $postID);
-                update_field('apartment_' . IMMOVABLES_BATHROOM, $immovable->bathroom, $postID);
-                update_field('apartment_' . IMMOVABLES_ROOM_IMAGE, $roomImageID, $postID);
+
+                $apartmentArray = array(
+                     IMMOVABLES_SQUARE => $immovable->square,
+                     IMMOVABLES_ROOMS_NUMBER => $immovable->roomsNumber,
+                     IMMOVABLES_PORCH => $immovable->porch,
+                     IMMOVABLES_BATHROOM => $immovable->bathroom,
+                     IMMOVABLES_ROOM_IMAGE => $roomImageID
+                );
+
+                update_field('apartment', $apartmentArray, $postID);
+
             }
 
-            return false;
+            return true;
         }
     }
 
