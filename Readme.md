@@ -3,9 +3,8 @@
 
 Документація REST API для тестового проекту Etcetera
 
-## GET request
-
-
+## PUT request
+Запит для оновлення об'єкту нерухомості
 
 ### Endopoint:
 ```sh
@@ -14,12 +13,12 @@ https://etcetera.zakarpat-maf.com.ua/wp-json/etcetera/v2/edit-immovable
 
 ### Put параметри:
 
-	PUT запит ПОВИНЕН мати наступні параметри:
+PUT запит ПОВИНЕН мати наступні параметри:
 
 ```sh
 post_id
 ```
-    id поста параметри якого треба оновити
+id поста параметри якого треба оновити
 
 ```sh
 parameter
